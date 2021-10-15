@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBIKE</title>
+
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="home.css">
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="homeSlider.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logoYBIKE">
+            <img src="logoYBIKE.png" alt="">
+        </div>
+
+        <nav>
+            <div>
+                <a href="index.html">
+                    <b>Home</b>
+                </a>
+            </div>
+            
+            <div class="dropdown">
+                <a class="dropbtn">
+                    <b>Products</b>
+                </a>
+                <div class="dropdown-content">
+                    <hr style="margin-top: 12px;">
+                    <a href="productsKawasako.html">Kawasako</a>
+                    <hr>
+                    <a href="productsVixian.html">Vixian</a>
+                    <hr>
+                </div>
+            </div>
+
+            <div>
+                <a href="gallery.html">
+                    <b>Gallery</b>
+                </a>
+            </div>
+            
+            <div>
+                <a href="reserve.html">
+                    <b>Reserve</b>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+    <div class="homeSlider">    
+        <div class="slider" >
+            <div class="slider-image"  >
+                <img src="Slider Image-1.png" alt="" class="current">
+                <img src="Slider Image-2.jpg" alt="">
+                <img src="Slider Image-3.jpg" alt="">
+            </div>
+            
+            <div class="slider-button">
+                <button class="prev"><</button>
+                <button class="next">></button>
+            </div>
+        </div>
+    </div>
+
+        <div class="latestNews">
+            <h1 style="margin: 10px auto 30px auto;">Latest News</h1>
+
+            <div class="latestNewsDetail">
+                <div class="news">
+                    <div style="background-image: url(news1.jpg);" id="newsFrame">
+                    </div>
+                    <h3>Better together: Kawasaki working on hybrid bikes and AI assistants</h3>
+                </div>
+
+                <div class="news">
+                    <div style="background-image: url(news2.jpg);" id="newsFrame">
+                    </div>
+                    <h3>The Long Sayonara: Kawasaki Ninja ZX-14R Updated... is This a Farewell Tour?</h3>
+                </div>
+
+                <div class="news">
+                    <div style="background-image: url(news3.jpg);" id="newsFrame">
+                    </div>
+                    <h3>Kawasaki Prime to Accelerate Greener Future... But it Won't Just Rely on Electric</h3>
+                </div>
+
+                <div class="news">
+                    <div style="background-image: url(news4.jpg);" id="newsFrame">
+                    </div>
+                    <h3>Moto3 rider Jason Dupasquier, 19, dies after crash in qualifying</h3>
+                </div>
+
+                <div class="news">
+                    <div style="background-image: url(news5.png);" id="newsFrame">
+                    </div>
+                    <h3>Bike Crash Video Highlights Extreme Speed Danger</h3>
+                </div>
+
+                <div class="news">
+                    <div style="background-image: url(news6.jpeg);" id="newsFrame">
+                    </div>
+                    <h3>All-New KX112 Headlines Kawasaki’s 2022-Model Announcements</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="companyProfile">
+            <h1 style="margin: 10px auto 30px auto;">Company Profile</h1>
+            <p>YBIKE is a motorcycle dealer formed on December 30, 2016 and based in Jakarta, Indonesia. 
+                YBIKE sells motorcycles from 2 famous brands of motorcycle: Vixian and Kawasako. The dealer is led by
+                Carvin Joestar. The products are kept inside a secure warehouse and covered with a large fabric to keep them clean of dusts.</p>
+        </div>
+    </section>
+
+    <footer class="footer" >
+        <div class="right">
+            <div class="staytuned">
+                <p class="title"> <b>Stay Tuned</b></p>
+                <p>Connect with us and stay with the circle</p>
+            </div>
+
+            <div class="sm">
+                <img src="logoFB.png" alt="" class="social-media" id="facebook" >
+                <img src="logoIG.png" alt="" class="social-media" id="instagram">
+                <img src="logoTwitter.png" alt="" class="social-media" id="twitter">
+                <img src="logoYoutube.png" alt="" class="social-media" id="youtube">
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class="contact">
+                <p> <b>Contact Us</b></p>
+                <p>We've got the answer</p>
+                <div style="margin-top: 10px;" class="emailbox">
+                    <input type="email" id="email" name="email"> 
+                </div>
+            </div>
+        </div>
+            
+        <div class="left">
+            <div class="leftAtas">
+                <img src="logoAppStore.png" alt="" id="playstore">
+                <img src="logoAppStore.png" alt="" id="appstore">
+            </div>
+
+            <p style="color:white">© 2021 YBIKE STORE INDONESIA</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="reserve.css">
+    
+    <script src="reserveSlider.js"></script>
+    <script src="jquery-3.5.1.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="logoYBIKE">
+            <img src="logoYBIKE.png" alt="">
+        </div>
+
+        <nav>
+            <div>
+                <a href="index.html">
+                    <b>Home</b>
+                </a>
+            </div>
+    
+            <div class="dropdown">
+                <a class="dropbtn">
+                    <b>Products</b> 
+                </a>
+                <div class="dropdown-content">
+                    <hr style="margin-top: 12px;">
+                    <a href="productsKawasako.html">Kawasako</a>
+                    <hr>
+                    <a href="productsVixian.html">Vixian</a>
+                    <hr>
+                </div>
+            </div>
+    
+            <div>
+                <a href="gallery.html">
+                    <b>Gallery</b>
+                </a>
+            </div>
+            
+            <div>
+                <a href="reserve.html">
+                   <b>Reserve</b>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="reserve-product">
+            <div class="type">
+                <h2>Vixian</h2>
+            </div>
+
+            <div class="reserveSlider">    
+                <div class="slider" >
+                    <div class="slider-image"  >
+                        <img class="mySlides" id="first" src="Vixion Blue.png">
+                        <img class="mySlides" src="Vixion Black.png">
+                        <img class="mySlides" src="Vixion Red.png">
+                    </div>
+                
+                    <div class="slider-button">
+                        <button class="prev-button" onclick="plusDivs(-1)">&#10094;</button>
+                   
+                        <button class="next-button" onclick="plusDivs(+1)">&#10095;</button>
+                        <p style="margin-left: 15px;">Quantity: </p>
+                        <input type="text" name = 'qty' id ='qty'>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <div class="user-form">
+            <form action="">
+                <div>
+                    <label for="name" style="margin-left: 10px; " >Name:</label><br>
+                    <input type="text" name = 'name' id ='name' style="margin-left: 10px; margin-bottom: 10px"><br>
+                </div>
+                <div>
+                    <label for="email" style="margin-left: 10px;">Email:</label><br>
+                    <input type="email" name = 'email' id ='email' style="margin-left: 10px;"><br>
+                </div>
+                <div>
+                    <label for="password" style="margin-left: 10px;">Password:</label><br>
+                    <input type="password" name = 'password' id ='password' style="margin-left: 10px;margin-bottom: 10px"><br>
+                </div>
+                <div>
+                    <label for="gender" style="margin-left: 10px;">Gender:</label><br>
+                    <input type="radio" name = 'gender' id ='male' value = "Male" style="margin-left: 10px;margin-bottom: 10px">
+                    <label for="male">Male</label style="margin-left: 10px;">
+                    <input type="radio" name = 'gender' id ='female' value = "Female" style="margin-left: 10px;margin-bottom: 10px">
+                    <label for="female">Female</label style="margin-left: 10px;">
+                </div>
+                <div>
+                    <label for="country" style="margin-left: 10px;">Country :</label><br>
+                    <select name="country" id="country" style="margin-left: 10px; margin-bottom: 10px">
+                        <option value="">Select Country</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="China">China</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+                <div>
+                    <p style="margin-left: 10px;">Address :</p> 
+                    <textarea name="address" id="address" cols="39" rows="5" style="margin-left: 10px;margin-bottom: 10px; resize: none;"></textarea>
+                    <span id ="characters"></span>
+                </div>
+    
+                <button type="submit" id="submit" style="margin-left: 10px;margin-bottom: 10px">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer" >
+        <div class="right">
+            <div class="staytuned">
+                <p class="title"> <b>Stay Tuned</b></p>
+                <p>Connect with us and stay with the circle</p>
+            </div>
+
+            <div class="sm">
+                <img src="logoFB.png" alt="" class="social-media" id="facebook" >
+                <img src="logoIG.png" alt="" class="social-media" id="instagram">
+                <img src="logoTwitter.png" alt="" class="social-media" id="twitter">
+                <img src="logoYoutube.png" alt="" class="social-media" id="youtube">
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class="contact">
+                <p> <b>Contact Us</b></p>
+                <p>We've got the answer</p>
+                <div style="margin-top: 10px;" class="emailbox">
+                    <input type="email" id="email" name="email"> 
+                </div>
+            </div>
+        </div>
+            
+        <div class="left">
+            <div class="leftAtas">
+                <img src="logoPlayStore.png" alt="" id="playstore">
+                <img src="logoAppStore.png" alt="" id="appstore">
+            </div>
+
+            <p style="color:white">© 2021 YBIKE STORE INDONESIA</p>
+        </div>
+    </footer>
+</body>
+</html>

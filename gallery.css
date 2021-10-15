@@ -1,0 +1,122 @@
+section {
+    grid-area: section;
+}
+
+div h2 {
+    text-align: center;
+    margin: 30px auto;
+    margin-bottom: 10px;
+}
+
+.exhibition-grid {
+    margin: auto;
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.exhibition-grid div {
+    height: 280px;
+    width: 498px;
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: inset 150px 0px 300px 5px rgba(0,0,0,6); */
+    border-radius: 20px;
+    margin: 0 15px;
+}
+
+#exhibition1 {
+    background-image: url('Kawasaki-stand-1-1280x720.png');
+}
+
+#exhibition2 {
+    background-image: url('Kawasaki_stand_2.jpg');
+}
+
+#exhibition3 {
+    background-image: url('2016-Moto-Expo-Kawasaki-1-1024x597.jpg');
+}
+
+#exhibition4 {
+    background-image: url('Kawasaki-Moto-Expo.jpg');
+}
+
+#exhibition5 {
+    background-image: url('288ac257ea23042d92887df58c94c439.jpg');
+    margin-bottom: 100px;
+}
+
+#exhibition6 {
+    background-image: url('969d279523bc662ba77ead56fb57f411.jpg');
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .exhibition-grid {
+        margin: auto;
+        display: grid;
+        max-width: 1024px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+    
+    .exhibition-grid div {
+        height: 324px;
+        width: 576px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin: auto;
+    }
+
+    div h2 {
+        text-align: center;
+        margin: 30px 50px;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+    
+    #exhibition5 {
+        background-image: url('288ac257ea23042d92887df58c94c439.jpg');
+        margin-bottom: 0;
+    }
+    
+    #exhibition6 {
+        background-image: url('969d279523bc662ba77ead56fb57f411.jpg');
+    }  
+}
+
+@media screen and (max-width: 450px) {
+    .exhibition-grid {
+        margin: auto;
+        display: grid;
+        max-width: 1024px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+    
+    .exhibition-grid div {
+        height: 182px;
+        width: 322px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin: auto;
+    }
+
+    div h2 {
+        text-align: center;
+        margin: 30px 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    #exhibition5 {
+        background-image: url('288ac257ea23042d92887df58c94c439.jpg');
+        margin-bottom: 0;
+    }
+    
+    #exhibition6 {
+        background-image: url('969d279523bc662ba77ead56fb57f411.jpg');
+    }  
+}

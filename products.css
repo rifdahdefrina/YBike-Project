@@ -1,0 +1,178 @@
+section {
+    grid-area: section;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.column{
+    display: flex;
+    flex-direction: column;
+}   
+
+.row{
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mtr{
+    margin-top: 40px;
+    height: 200px;
+    width: 400px;
+    margin-left: 40px;
+}
+
+.color-selection{
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+}
+
+.product-name{
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 25px;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.product-desc{
+    font-size: 10px;
+    text-align: center;
+    margin: 10px 80px;
+}
+
+.product-price{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 80px;
+}
+
+.round-button-black {
+    display:block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius: 50%;
+    text-align:center;
+    text-decoration:none;
+    background: #000000;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button-black:hover {
+    background: #464646;
+}
+
+.round-button-green {
+    display:block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius: 50%;
+    text-align:center;
+    text-decoration:none;
+    background: #18db42;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button-green:hover {
+    background: #43f360;
+}
+
+.round-button-brown {
+    display:block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius: 50%;
+    text-align:center;
+    text-decoration:none;
+    background: #e4d4b3;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.round-button-brown:hover {
+    background: #ebdfbf;
+}
+
+
+#Kawasako{
+    font-size: 40px;
+    padding:10px;
+    text-align: center;
+}
+
+#Vixian{
+    font-size: 40px;
+    padding:10px;
+    text-align: center;    
+}
+
+.round-button-red {
+    display:block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius: 50%;
+    text-align:center;
+    text-decoration:none;
+    background: #f00c0c;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button-red:hover {
+    background: #fc3d3d;
+}
+
+.round-button-blue {
+    display:block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius: 50%;
+    text-align:center;
+    text-decoration:none;
+    background: #09255a;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button-blue:hover {
+    background: #1624a1;
+}
+
+@media screen and (max-width: 800px) {
+    .row{
+        grid-template-columns: auto auto; 
+    }
+
+    #Kawasako{
+        margin-top: 20px;
+    }
+
+    #lastproduct{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .row{
+        grid-template-columns: auto;
+    }
+}
